@@ -89,8 +89,7 @@ MongoClient.connect(mongoURI)
   })
   .catch((err) => console.error("MongoDB Connection Error:", err));
 
-  httpServer.listen(port, () => {
-  console.log("Server active on port 3000");
+  httpServer.listen("https://healthai-arogya.onrender.com", () => {
 });
 
 // Middleware
